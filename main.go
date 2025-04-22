@@ -17,7 +17,8 @@ type AppConfig struct {
 }
 
 func main() {
-    err := gotenv.Load; if err != nil {
+    err := gotenv.Load()
+    if err != nil {
         log.Printf("ERROR: couldn't load env, %v", err) 
     }
 
