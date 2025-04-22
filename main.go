@@ -10,6 +10,7 @@ import (
 const (
     PORT = ":4000"
     TEMPLATES_PATH = "./templates/*"
+    STATIC_PATH = "./static"
 )
 
 type AppConfig struct {
@@ -24,9 +25,10 @@ func main() {
 
     router := gin.Default()
     router.LoadHTMLGlob(TEMPLATES_PATH)
+    router.Static("/static", STATIC_PATH)
 
     router.GET("/", func(c *gin.Context) {
-        c.HTML(200, "index", nil)
+        c.HTML(200, "index", struct{ Title string }{ Title: "World" })
     })
 
     log.Printf("Serving on port %s\n", PORT)

@@ -1,0 +1,78 @@
+:root {
+    /* Primary colors */
+    --primary-100: #2365FF;
+    --primary-200: #5B8CFF;
+    --primary-300: #B4CBFF;
+    --primary-400: #E4ECFF;
+
+    /* Neutral colors */
+    --neutral-100: #0C1B3E;
+    --neutral-200: #192D5C;
+    --neutral-300: #324676;
+    --neutral-400: #546A9D;
+    --neutral-500: #8A9ECC;
+    --neutral-600: #F4F7FF;
+
+    /* Errors colors */
+    --error-100: #FB3F3F;
+    --error-200: #F39090;
+    --error-300: #FFC6C6;
+
+    /* Font size */
+    --font-sm: 0.875rem;
+    --font-base: 1rem;
+    --font-md: 1.125rem;
+    --font-lg: 1.25rem;
+    --font-xl: 1.5rem;
+    --font-2xl: 1.75rem;
+    --font-3xl: 2rem;
+    --font-4xl: 2.25rem;
+    --font-5xl: 2.5rem;
+    --font-6xl: 2.75rem;
+    --font-7xl: 3rem;
+
+    /* Font famililies */
+    --inter: "Inter", sans-serif;
+    --roboto: "Roboto", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+[role="list"] {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-block-size: 100vh;
+    line-height: 1.6;
+}
+
+h1, h2, h3, button, input, label {
+    line-height: 1.1;
+}
+
+img, picture {
+    max-inline-size: 100%;
+    display: block;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
