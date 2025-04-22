@@ -1,0 +1,143 @@
+@layer reset {
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    html {
+        -moz-text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+        text-size-adjust: none;
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    [role="list"] {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        min-block-size: 100vh;
+        font-size: var(--font-size-regular);
+        color: var(--neutral-200);
+    }
+
+    h1,
+    h2,
+    h3,
+    button,
+    input,
+    label {
+        line-height: 1.1;
+    }
+
+    img,
+    picture {
+        max-inline-size: 100%;
+        display: block;
+    }
+
+    input,
+    button,
+    textarea,
+    select {
+        font: inherit;
+    }
+}
+
+@layer base {
+    :root {
+        /* Primary colors */
+        --primary-100: #be123c;
+        --primary-200: #e11d48;
+        --primary-300: #f43f5e;
+        --primary-400: #fb7185;
+        --primary-500: #fda4af;
+        --primary-600: #fecdd3;
+
+        /* Neutral colors */
+        --neutral-100: #0C1B3E;
+        --neutral-200: #192D5C;
+        --neutral-300: #324676;
+        --neutral-400: #546A9D;
+        --neutral-500: #8A9ECC;
+        --neutral-600: #F4F7FF;
+
+        /* Errors colors */
+        --error-100: #FB3F3F;
+        --error-200: #F39090;
+        --error-300: #FFC6C6;
+
+        /* Font size */
+        --fs-100: 0.75rem;
+        --fs-200: 0.875rem;
+        --fs-300: 1rem;
+        --fs-400: 1.125rem;
+        --fs-500: 1.25rem;
+        --fs-600: 1.5rem;
+        --fs-700: 1.75rem;
+        --fs-800: 2rem;
+        --fs-900: 2.25rem;
+        --fs-1000: 2.5rem;
+        --fs-1100: 3rem;
+
+        /* Font famililies */
+        --inter: "Inter", sans-serif;
+        --roboto: "Roboto", sans-serif;
+
+        @media(media > 760px) {
+            --fs-100: 0.875rem;
+            --fs-200: 1rem;
+            --fs-300: 1.25rem;
+            --fs-400: 1.5rem;
+            --fs-500: 1.75rem;
+            --fs-600: 2rem;
+            --fs-700: 3.25rem;
+            --fs-800: 3.5rem;
+            --fs-900: 4rem;
+            --fs-1000: 6rem;
+            --fs-1100: 7rem;
+        }
+
+        --font-size-heading-sm: var(--fs-800);
+        --font-size-heading-regular: var(--fs-900);
+        --font-size-heading-lg: var(--fs-1000);
+        --font-size-heading-xl: var(--fs-1100);
+
+        --font-size-sm: var(--fs-100);
+        --font-size-regular: var(--fs-200);
+        --font-size-lg: var(--fs-400);
+        --font-size-xl: var(--fs-500);
+
+        --border-radius-1: 0.25rem;
+        --border-radius-2: 0.5;
+        --border-radius-3: 0.75rem;
+        --border-radius-4: 1rem;
+        --border-radius-5: 1.5rem;
+    }
+
+    html {
+        font-family: var(--roboto);
+        line-height: 1.6;
+    }
+
+    h1 {
+        font-size: var(--font-size-heading-xl)
+    }
+
+    a {
+        color: var(--primary-100);
+    }
+
+    a:hover,
+    a:focus-visible {
+        color: var(--primary-300);
+    }
+}
