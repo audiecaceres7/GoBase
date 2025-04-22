@@ -130,10 +130,6 @@
         line-height: 1.6;
     }
 
-    h1 {
-        font-size: var(--font-size-heading-xl);
-    }
-
     a {
         color: var(--primary-100);
     }
